@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Csobaji holtág</title>
+    <title>Csobaji-holtag</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="navbar.css">
@@ -17,6 +17,7 @@
         <nav class="navbar navbar-expand-lg navbar-light fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="#">
+                    <img src="pictures/logo.avif" alt="">
                     Taktaközi horgászegyesület
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -59,24 +60,166 @@
         <section id="hero">
             <!-- Nagy kezdőkép, bemutatkozó rész -->
             <div class="hero-content">
-                <p class="title">Csobaji Holtág</p>
+                <p class="title">Csobaji-Holtág</p>
                 <p class="subtitle">A természet nyugalma és a horgászat élménye</p>
                 <a href="#fishing">Fedezd fel</a>
             </div>
         </section>
-        <section id="about">
-            <!-- A holtágról -->
-             <p>A Csobaj közelében fekvő Csobaji-holtág, amelyet sokan Kifli-tó néven is ismernek, a Tisza egykori medréből kialakult természetes vízterület. A csendes környezet, a nyugodt partszakaszok és a változatos halállomány miatt a környék egyik kedvelt horgászvize.
-                A holtág elsősorban azok számára jelent ideális választást, akik a természetközeli horgászat élményét keresik, távol a zsúfolt, intenzíven kiépített tavaktól. A vízpart hangulatát a fás partszakaszok, a természetes mederviszonyok és a Tisza-vidék jellegzetes élővilága teszi igazán különlegessé.</p>
-        </section>
-        <section id="fishing">
-            <!-- Horgászat -->
+        <div class="fishing-container" id="about">
+            <section class="about-image">
+                <img src="pictures/holtag.webp" alt="Egy kép a holtágr vizéről.">
+            </section>
+            <section class="about-text">
+                <!-- A holtágról -->
+                <h2>A holtágról</h2>
+                <p>
+                    A Csobaji-holtág Borsod-Abaúj-Zemplén vármegyében, Csobaj közelében található. 
+                    A Tisza szabályozását követően kialakult természetes vízterület jellegét máig megőrizte. 
+                    Az átlagosan körülbelül 4 méter mély víz kiváló lehetőséget biztosít békéshalas 
+                    és ragadozóhalas horgászatra egyaránt.
+                    A több helyen árnyékos partszakasz kellemes környezetet nyújt a hosszabb horgászatokhoz. 
+                    A változatos meder, a természetközeli élővilág és a nyugodt vízparti hangulat miatt a 
+                    holtág ideális választás azok számára, akik csendes, természetközeli horgászélményre vágynak.
+                </p>
+            </section>
+        </div>
+        <div class="fishing-container">
+            <section id="fishing">
+                <!-- Horgászat -->
+                <h2>Horgászat</h2>
+                <ul class="fishing-list">
+                    <li>
+                        <span class="icon">
+                            <img src="pictures/fishing-rod.svg" alt="">
+                        </span>
+                        Feeder horgászat
+                    </li>
+                    <li>
+                        <span class="icon">
+                            <img src="pictures/fishing-rod.svg" alt="">
+                        </span>
+                        Method feeder
+                    </li>
+                    <li>
+                        <span class="icon">
+                            <img src="pictures/fishing-rod.svg" alt="">
+                        </span>
+                        Úszós horgászat
+                    </li>
+                    <li>
+                        <span class="icon">
+                            <img src="pictures/fishing-rod.svg" alt="">
+                        </span>
+                        Fenekező horgászat
+                    </li>
+                    <li>
+                        <span class="icon">
+                            <img src="pictures/fishing-rod.svg" alt="">
+                        </span>
+                        Pergető horgászat
+                    </li>
+                    <li>
+                        <span class="icon">
+                            <img src="pictures/fishing-rod.svg" alt="">
+                        </span>
+                        Horgászat partról
+                    </li>
+                    <li>
+                        <span class="icon">
+                            <img src="pictures/fishing-rod.svg" alt="">
+                        </span>
+                        Horgászat csónakról
+                    </li>
+                </ul>
+            </section>
+            <section id="fish">
+                <h2>Fogható halak</h2>
+                <ul class="fish-list">
+                    <li>
+                        <span class="icon">
+                            <img src="pictures/fish.svg" alt="">
+                        </span>
+                        Ponty
+                    </li>
+                    <li>
+                        <span class="icon">
+                            <img src="pictures/fish.svg" alt="">
+                        </span>
+                        Keszeg
+                    </li>
+                    <li>
+                        <span class="icon">
+                            <img src="pictures/fish.svg" alt="">
+                        </span>
+                        Kárász
+                    </li>
+                    <li>
+                        <span class="icon">
+                            <img src="pictures/fish.svg" alt="">
+                        </span>
+                        Harcsa
+                    </li>
+                    <li>
+                        <span class="icon">
+                            <img src="pictures/fish.svg" alt="">
+                        </span>
+                        Balin
+                    </li>
+                    <li>
+                        <span class="icon">
+                            <img src="pictures/fish.svg" alt="">
+                        </span>
+                        Csuka
+                    </li>
+                    <li>
+                        <span class="icon">
+                            <img src="pictures/fish.svg" alt="">
+                        </span>
+                        Süllő
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <section id="prices">
+            <!-- Árak -->
+            <h2>Árak</h2>
+            <ul class="price-list">
+                <li>
+                    <span class="icon">
+                        <img src="pictures/price.svg" alt="">
+                    </span>
+                    Felnőtt napijegy: 5.000 Ft
+                </li>
+                <li>
+                    <span class="icon">
+                        <img src="pictures/price.svg" alt="">
+                    </span>
+                    Sportjegy: 3.000 Ft
+                </li>
+                <li>
+                    <span class="icon">
+                        <img src="pictures/price.svg" alt="">
+                    </span>
+                    6 napos jegy: 20.000 Ft
+                </li>
+                <li>
+                    <span class="icon">
+                        <img src="pictures/price.svg" alt="">
+                    </span>
+                    Éves engedély: 50.000 Ft
+                </li>
+            </ul>
         </section>
         <section id="gallery">
             <!-- Galéria -->
+            <h2>Galéria</h2>
         </section>
         <section id="news">
             <!-- Hírek -->
+            <h2>Hírek</h2>
+        </section>
+        <section id="">
+
         </section>
     </main>
     <!-- FOOTER -->
