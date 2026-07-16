@@ -1,0 +1,19 @@
+.navbar {
+    background-color: rgba(20, 20, 20, 0.55);
+    backdrop-filter: blur(8px);
+}
+
+.navbar .nav-link, .navbar .navbar-brand {
+    color: white;
+}
+
+.navbar .nav-link:hover {
+    color: #d9d9d9;
+}
+
+.navbar-brand {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}

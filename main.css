@@ -1,0 +1,47 @@
+#hero {
+    height: 70vh;
+    min-height: 500px;
+    background-image: url("pictures/hero2.PNG");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero {
+    position: relative;
+}
+
+#hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-content {
+    text-align: center;
+    color: white;
+}
+
+.title {
+    font-family: "Cormorant Garamond", serif;
+}
+
+.subtitle {
+    font-family: "Inter", sans-serif;
+}
+
+.title {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+}
+
+.subtitle {
+    font-size: clamp(1rem, 2vw, 1.4rem);
+}
