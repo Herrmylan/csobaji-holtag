@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="293.19315mm"
+   height="228.16669mm"
+   viewBox="0 0 293.19315 228.16669"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.4 (dcaf3e7, 2026-05-05)"
+   sodipodi:docname="trapezoidEgyesitett.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#ffffff"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     inkscape:zoom="1"
+     inkscape:cx="622.5"
+     inkscape:cy="360.5"
+     inkscape:window-width="1920"
+     inkscape:window-height="974"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Drop Shadow"
+       id="filter3"
+       x="-0.23193445"
+       y="-0.2350346"
+       width="1.5161064"
+       height="1.509771">
+      <feFlood
+         result="flood"
+         in="SourceGraphic"
+         flood-opacity="0.498039"
+         flood-color="rgb(0,0,0)"
+         id="feFlood2" />
+      <feGaussianBlur
+         result="blur"
+         in="SourceGraphic"
+         stdDeviation="7.400000"
+         id="feGaussianBlur2" />
+      <feOffset
+         result="offset"
+         in="blur"
+         dx="4.000000"
+         dy="3.000000"
+         id="feOffset2" />
+      <feComposite
+         result="comp1"
+         operator="in"
+         in="flood"
+         in2="offset"
+         id="feComposite2" />
+      <feComposite
+         result="fbSourceGraphic"
+         operator="over"
+         in="SourceGraphic"
+         in2="comp1"
+         id="feComposite3" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix3" />
+      <feFlood
+         id="feFlood3"
+         result="flood"
+         in="fbSourceGraphic"
+         flood-opacity="0.498039"
+         flood-color="rgb(0,0,0)" />
+      <feGaussianBlur
+         id="feGaussianBlur3"
+         result="blur"
+         in="fbSourceGraphic"
+         stdDeviation="7.400000" />
+      <feOffset
+         id="feOffset3"
+         result="offset"
+         in="blur"
+         dx="4.000000"
+         dy="3.000000" />
+      <feComposite
+         id="feComposite4"
+         result="comp1"
+         operator="in"
+         in="flood"
+         in2="offset" />
+      <feComposite
+         id="feComposite5"
+         result="comp2"
+         operator="over"
+         in="fbSourceGraphic"
+         in2="comp1" />
+    </filter>
+  </defs>
+  <g
+     inkscape:label="Réteg 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(6.0220405,-55.80244)">
+    <g
+       id="g9">
+      <g
+         id="g10" />
+    </g>
+    <g
+       id="g11">
+      <g
+         id="g14">
+        <g
+           id="g13">
+          <path
+             id="use1"
+             style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke-width:0.264583"
+             d="M 174.43278,122.03426 134.0244,273.16044 H 287.17112 V 122.43837 Z" />
+        </g>
+        <g
+           id="g12">
+          <path
+             id="rect1"
+             style="fill:#38445f;fill-opacity:1;fill-rule:nonzero;stroke-width:0.264583;filter:url(#filter3)"
+             d="M 29.497959,91.322441 V 242.04502 l 112.738851,0.40411 40.40787,-151.126689 z" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
