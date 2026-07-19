@@ -1,7 +1,7 @@
 #hero {
     height: 70vh;
     min-height: 500px;
-    background-image: url("../pictures/hero.avif");
+    background-image: url("../pictures/backgrounds/hero.avif");
     background-size: cover;
     background-position: center;
     display: flex;

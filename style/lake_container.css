@@ -1,13 +1,12 @@
 .lake-container {
     display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
     gap: 0;
     width: 100%;
-    margin: 0 auto;
     padding-top: 50px;
     padding-bottom: 50px;
-    position: relative;
-    grid-template-columns: 1fr 1fr;
-    padding-left: 0;
+    margin-bottom: 5vh;
     max-width: none;
     overflow: hidden;
 }
@@ -18,13 +17,9 @@
     align-items: center;
     width: 100%;
     min-height: 500px;
-
+    color: #eeeeee;
     position: relative;
     z-index: 1;
-}
-
-#lake-upper h2, #lake-upper li {
-    color: #eeeeee;
 }
 
 #lake-lower {
@@ -34,6 +29,7 @@
     width: 100%;
     min-height: 500px;
     padding-left: clamp(20px, 10vw, 200px);
+    color: #38445F;
     position: relative;
     z-index: 1;
 }
@@ -50,12 +46,12 @@
 
 .shape-right {
     right: -10vw;
-    background-image: url("../pictures/trapezoid-right.svg");
+    background-image: url("../pictures/shapes/trapezoid-right.svg");
 }
 
 .shape-left {
     left: -10vw;
-    background-image: url("../pictures/trapezoid-left.svg");
+    background-image: url("../pictures/shapes/trapezoid-left.svg");
 }
 
 #lake-upper {
@@ -82,4 +78,14 @@
 #lake-upper img, #lake-lower img {
     width: clamp(220px, 35vw, 500px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+figure {
+    text-align: center;
+}
+
+figcaption {
+    margin-top: 10px;
+    font-size: 1rem;
+    padding-top: 2vh;;
 }

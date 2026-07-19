@@ -4,12 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Csobaji-holtag</title>
+    <link rel="icon" type="image/avif" href="pictures/logo.avif">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style/main.css">
     <link rel="stylesheet" href="style/navbar.css">
     <link rel="stylesheet" href="style/hero.css">
     <link rel="stylesheet" href="style/about.css">
     <link rel="stylesheet" href="style/lake_container.css">
+    <link rel="stylesheet" href="style/fishing.css">
+    <link rel="stylesheet" href="style/prices.css">
+    <link rel="stylesheet" href="style/gallery.css">
+    <link rel="stylesheet" href="style/contacts.css">
+    <link rel="stylesheet" href="style/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -20,7 +26,7 @@
         <nav class="navbar navbar-expand-lg navbar-light fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="#">
-                    <img src="pictures/logo.avif" alt="">
+                    <img src="pictures/logos/logo.avif" alt="">
                     Taktaközi horgászegyesület
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -41,6 +47,11 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#fishing">
                                 Horgászat
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#prices">
+                                Árak
                             </a>
                         </li>
                         <li class="nav-item">
@@ -70,7 +81,7 @@
         </section>
         <div class="about-container" id="about">
             <section class="about-image">
-                <img src="pictures/holtag.webp" alt="Egy kép a holtágr vizéről.">
+                <img src="pictures/content/holtag.webp" alt="Egy kép a holtágr vizéről.">
             </section>
             <section class="about-text">
                 <!-- A holtágról -->
@@ -92,156 +103,282 @@
             <section id="lake-upper">
                 <!-- Felső víz -->
                 <h2>Felső víz</h2>
-                <img src="pictures/lake-upper.webp" alt="Egy kép a felső vízről">
+                <figure>
+                    <img src="pictures/content/lake-upper.webp" alt="Egy kép a felső vízről">
+                    <figcaption class="fig-upper">Átlagos mélység ... méter</figcaption>
+                </figure>
             </section>
             <section id="lake-lower">
                 <!-- Alsó víz -->
                 <h2>Alsó víz</h2>
-                <img src="pictures/lake-lower.webp" alt="Egy kép az alsó vízről">
+                <figure>
+                    <img src="pictures/content/lake-lower.webp" alt="Egy kép az alsó vízről">
+                    <figcaption class="fig-lower">Átlagos mélység: ... méter</figcaption>
+                </figure>
             </section>
         </div>
-        <section id="fishing-methods">
-            <!-- Horgász módszerek -->
-            <h2>Horgász módszerek</h2>
-            <ul class="fishing-list">
-                <li>
-                    <span class="icon">
-                        <img src="pictures/fishing-rod.svg" alt="">
-                    </span>
-                    Feeder horgászat
-                </li>
-                <li>
-                    <span class="icon">
-                        <img src="pictures/fishing-rod.svg" alt="">
-                    </span>
-                    Method feeder
-                </li>
-                <li>
-                    <span class="icon">
-                        <img src="pictures/fishing-rod.svg" alt="">
-                    </span>
-                    Úszós horgászat
-                </li>
-                <li>
-                    <span class="icon">
-                        <img src="pictures/fishing-rod.svg" alt="">
-                    </span>
-                    Fenekező horgászat
-                </li>
-                <li>
-                    <span class="icon">
-                        <img src="pictures/fishing-rod.svg" alt="">
-                    </span>
-                    Pergető horgászat
-                </li>
-                <li>
-                    <span class="icon">
-                        <img src="pictures/fishing-rod.svg" alt="">
-                    </span>
-                    Horgászat partról
-                </li>
-                <li>
-                   <span class="icon">
-                        <img src="pictures/fishing-rod.svg" alt="">
-                    </span>
-                    Horgászat csónakról
-                </li>
-            </ul>
-        </section>
-        <section id="fish">
-            <h2>Fogható halak</h2>
-            <ul class="fish-list">
-                <li>
-                    <span class="icon">
-                        <img src="pictures/fish.svg" alt="">
-                    </span>
-                    Ponty
-                </li>
-                <li>
-                    <span class="icon">
-                        <img src="pictures/fish.svg" alt="">
-                    </span>
-                    Keszeg
-                </li>
-                <li>
-                    <span class="icon">
-                        <img src="pictures/fish.svg" alt="">
-                    </span>
-                    Kárász
-                </li>
-                <li>
-                    <span class="icon">
-                        <img src="pictures/fish.svg" alt="">
-                    </span>
-                    Harcsa
-                </li>
-                <li>
-                    <span class="icon">
-                        <img src="pictures/fish.svg" alt="">
-                    </span>
-                    Balin
-                </li>
-                <li>
-                    <span class="icon">
-                        <img src="pictures/fish.svg" alt="">
-                    </span>
-                    Csuka
-                </li>
-                <li>
-                    <span class="icon">
-                        <img src="pictures/fish.svg" alt="">
-                    </span>
-                    Süllő
-                </li>
-            </ul>
+        <section id="fishing">
+            <!-- Horgászat -->
+            <h2>Horgászat</h2>
+            <p>Horgászhelyek</p>
+            <p>A part több pontján kialakított horgászhelyek várják a vendégeket.</p>
+            <p>Csónakos horgászat</p>
+            <p>A csónak használata lehetőséget biztosít a nehezebben megközelíthető helyek meghorgászására.</p>
+            <p>Éjszakai horgászat</p>
+            <p>Többnapos és hosszabb időtartamú horgászat esetén lehetőség nyílhat éjszakai horgászatra is.</p>
         </section>
         <section id="prices">
-            <!-- Árak -->
-            <h2>Árak</h2>
-            <ul class="price-list">
-                <li>
-                    <span class="icon">
-                        <img src="pictures/price.svg" alt="">
-                    </span>
-                    Felnőtt napijegy: 5.000 Ft
-                </li>
-                <li>
-                    <span class="icon">
-                        <img src="pictures/price.svg" alt="">
-                    </span>
-                    Sportjegy: 3.000 Ft
-                </li>
-                <li>
-                    <span class="icon">
-                        <img src="pictures/price.svg" alt="">
-                    </span>
-                    6 napos jegy: 20.000 Ft
-                </li>
-                <li>
-                    <span class="icon">
-                        <img src="pictures/price.svg" alt="">
-                    </span>
-                    Éves engedély: 50.000 Ft
-                </li>
-            </ul>
+            <!-- Napijegy árak -->
+            <h2>Napijegy árak</h2>
+            <div class="price-container">
+                <div class="price-card">
+                    <h3>Felnőtt napijegy</h3>
+                    <p>2 bot / fő</p>
+                    <p class="price">5 000 Ft</p>
+                    <ul>
+                        <li>1 horog</li>
+                        <li>...kg nemes</li>
+                        <li>...kg vegyes</li>
+                        <li>24 óra</li>
+                    </ul>
+                </div>
+                <div class="price-card">
+                    <h3>Ifjúsági napijegy</h3>
+                    <p>2 bot / fő</p>
+                    <p class="price">3 000 Ft</p>
+                    <ul>
+                        <li>1 horog</li>
+                        <li>...kg nemes</li>
+                        <li>...kg vegyes</li>
+                        <li>24 óra</li>
+                    </ul>
+                </div>
+                <div class="price-card">
+                    <h3>Gyermek napijegy</h3>
+                    <p>1 bot / fő</p>
+                    <p class="price">3 000 Ft</p>
+                    <ul>
+                        <li>1 horog</li>
+                        <li>...kg nemes</li>
+                        <li>...kg vegyes</li>
+                        <li>24 óra</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="prices">
+            <!-- Éves engedély árak -->
+            <h2>Éves engedély árak</h2>
+            <div class="price-container">
+                <div class="price-card">
+                    <h3>Felnőtt éves engedély</h3>
+                    <p>2 bot / fő</p>
+                    <p class="price">5 000 Ft</p>
+                    <ul>
+                        <li>1 horog</li>
+                        <li>...kg nemes</li>
+                        <li>...kg vegyes</li>
+                        <li>1 év</li>
+                    </ul>
+                </div>
+                <div class="price-card">
+                    <h3>Ifjúsági éves engedély</h3>
+                    <p>2 bot / fő</p>
+                    <p class="price">3 000 Ft</p>
+                    <ul>
+                        <li>1 horog</li>
+                        <li>...kg nemes</li>
+                        <li>...kg vegyes</li>
+                        <li>1 év</li>
+                    </ul>
+                </div>
+                <div class="price-card">
+                    <h3>Gyermek éves engedély</h3>
+                    <p>2 bot / fő</p>
+                    <p class="price">3 000 Ft</p>
+                    <ul>
+                        <li>1 horog</li>
+                        <li>...kg nemes</li>
+                        <li>...kg vegyes</li>
+                        <li>1 év</li>
+                    </ul>
+                </div>
+            </div>
         </section>
         <section id="gallery">
             <!-- Galéria -->
-            <h2>Galéria</h2>
-        </section>
-        <section id="rules">
-            <!-- Horgászrend -->
-            <h2>Horgászrend</h2>
+            <h2>Képek a fogásokról</h2>
+            <div id="gallery-carousel" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="pictures/gallery/01.jpg" class="d-block w-100" alt="Hal">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="pictures/gallery/02.webp" class="d-block w-100" alt="Hal">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="pictures/gallery/03.webp" class="d-block w-100" alt="Hal">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="pictures/gallery/04.webp" class="d-block w-100" alt="Hal">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="pictures/gallery/05.webp" class="d-block w-100" alt="Hal">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="pictures/gallery/06.webp" class="d-block w-100" alt="Hal">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="pictures/gallery/07.webp" class="d-block w-100" alt="Hal">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="pictures/gallery/08.webp" class="d-block w-100" alt="Hal">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="pictures/gallery/09.webp" class="d-block w-100" alt="Hal">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="pictures/gallery/10.webp" class="d-block w-100" alt="Hal">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="pictures/gallery/11.webp" class="d-block w-100" alt="Hal">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="pictures/gallery/12.webp" class="d-block w-100" alt="Hal">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="pictures/gallery/13.webp" class="d-block w-100" alt="Hal">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="pictures/gallery/14.webp" class="d-block w-100" alt="Hal">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="pictures/gallery/15.webp" class="d-block w-100" alt="Hal">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="pictures/gallery/16.webp" class="d-block w-100" alt="Hal">
+                    </div>
+                </div>
+                <!-- Bal nyíl -->
+                <button class="carousel-control-prev"
+                        type="button"
+                        data-bs-target="#gallery-carousel"
+                        data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <!-- Jobb nyíl -->
+                <button class="carousel-control-next"
+                        type="button"
+                        data-bs-target="#gallery-carousel"
+                        data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#gallery-carousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#gallery-carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#gallery-carousel" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#gallery-carousel" data-bs-slide-to="3"></button>
+                    <button type="button" data-bs-target="#gallery-carousel" data-bs-slide-to="4"></button>
+                    <button type="button" data-bs-target="#gallery-carousel" data-bs-slide-to="5"></button>
+                    <button type="button" data-bs-target="#gallery-carousel" data-bs-slide-to="6"></button>
+                    <button type="button" data-bs-target="#gallery-carousel" data-bs-slide-to="7"></button>
+                    <button type="button" data-bs-target="#gallery-carousel" data-bs-slide-to="8"></button>
+                    <button type="button" data-bs-target="#gallery-carousel" data-bs-slide-to="9"></button>
+                    <button type="button" data-bs-target="#gallery-carousel" data-bs-slide-to="10"></button>
+                    <button type="button" data-bs-target="#gallery-carousel" data-bs-slide-to="11"></button>
+                    <button type="button" data-bs-target="#gallery-carousel" data-bs-slide-to="12"></button>
+                    <button type="button" data-bs-target="#gallery-carousel" data-bs-slide-to="13"></button>
+                    <button type="button" data-bs-target="#gallery-carousel" data-bs-slide-to="14"></button>
+                    <button type="button" data-bs-target="#gallery-carousel" data-bs-slide-to="15"></button>
+                </div>
+            </div>
         </section>
         <section id="contacts">
             <!-- Kapcsolat -->
-            <h2>Kapcsolat</h2>
+            <div class="info-container">
+                <div class="info-item">
+                    <img src="pictures/icons/location2.svg" alt="">
+                    <div class="info-text">
+                        <span>Cím</span>
+                        <p>Valami út valami szám</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <img src="pictures/icons/phone1.svg" alt="">
+                    <div class="info-text">
+                        <span>Telefon</span>
+                        <p>12 34 567 8910</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <img src="pictures/icons/email1.svg" alt="">
+                    <div class="info-text">
+                        <span>Email</span>
+                        <p>valaki@email.hu</p>
+                    </div>
+                </div>
+            </div>
+            <div class="social">
+                <div class="facebook-site">
+                    <p>Kövess minket Facebook-on!</p>
+                    <a href="https://www.facebook.com/profile.php?id=61584749646782" target="_blank" rel="noopener noreferrer">
+                        <img src="pictures/logos/logo.avif" alt="Facebook oldal">
+                    </a>
+                </div>
+                <div class="site-map">
+                    <p>Oldaltérkép</p>
+                    <ul>
+                        <li><a href="#hero">Kezdőlap</a></li>
+                        <li><a href="#about">A holtágról</a></li>
+                        <li><a href="#fishing">Horgászat</a></li>
+                        <li><a href="#prices">Árak</a></li>
+                        <li><a href="#gallery">Galéria</a></li>
+                        <li><a href="#contacts">Kapcsolat</a></li>
+                    </ul>
+                </div>
+                <div class="fish-wardens">
+                    <p>Halőrök</p>
+                    <ul>
+                        <li>
+                            Halőr 1
+                            <ul>
+                                <li>tel.: 12 34 567 8910</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Halőr 2
+                            <ul>
+                                <li>tel.: 12 34 567 8910</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Halőr 3
+                            <ul>
+                                <li>tel.: 12 34 567 8910</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Halőr 4
+                            <ul>
+                                <li>tel.: 12 34 567 8910</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Halőr 5
+                            <ul>
+                                <li>tel.: 12 34 567 8910</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </section>
     </main>
     <!-- FOOTER -->
     <footer>
         <!-- Kapcsolat, jogi dolgok -->
-         
+        <p>© 2026 Taktaközi Horgászegyesület. Minden jog fenntartva.</p>
+        <p>Készítette Boldi Milán</p>
     </footer>
     <!-- SCRIPTS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

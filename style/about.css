@@ -3,8 +3,8 @@
     gap: 4rem;
     max-width: 1000px;
     margin: 0 auto;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
     /*???*/
     position: relative;
 }
@@ -28,4 +28,8 @@
 .about-text p {
     font-size: 1.15rem;
     margin-top: 40px;
+}
+
+#about h2 {
+    color: #38445F;
 }
