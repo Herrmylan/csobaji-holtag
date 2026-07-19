@@ -1,4 +1,4 @@
-.fishing-container {
+.lake-container {
     display: grid;
     gap: 0;
     width: 100%;
@@ -12,7 +12,7 @@
     overflow: hidden;
 }
 
-#fishing-methods {
+#lake-upper {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,11 +23,11 @@
     z-index: 1;
 }
 
-#fishing-methods h2, #fishing-methods li {
+#lake-upper h2, #lake-upper li {
     color: #eeeeee;
 }
 
-#fish {
+#lake-lower {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -48,38 +48,38 @@
     height: clamp(500px, 69vw, 1000px);
 }
 
-.shape-left {
-    left: -10vw;
-    background-image: url("../pictures/trapezoid-left.svg");
-}
-
 .shape-right {
     right: -10vw;
     background-image: url("../pictures/trapezoid-right.svg");
 }
 
-.shape-left, .shape-right {
-    animation: slideLeft 1s ease forwards;
+.shape-left {
+    left: -10vw;
+    background-image: url("../pictures/trapezoid-left.svg");
 }
 
-@keyframes slideLeft {
-    from {
-        transform: translateX(-100px);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
+#lake-upper {
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: all 0.8s ease;
 }
 
-@keyframes slideRight {
-    from {
-        transform: translateX(100px);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
+#lake-lower {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: all 0.8s ease;
+}
+
+#lake-upper.show, #lake-lower.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+#lake-upper h2, #lake-lower h2 {
+    padding-bottom: 30px;
+}
+
+#lake-upper img, #lake-lower img {
+    width: clamp(220px, 35vw, 500px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
