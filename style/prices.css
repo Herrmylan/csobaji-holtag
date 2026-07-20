@@ -65,6 +65,21 @@
         grid-template-columns: repeat(2, 1fr);
         padding: 2rem;
     }
+
+    .price-card h3 {
+        font-size: 1.3rem;
+    }
+    .price-card p,
+    .price-card li {
+        font-size: 0.95rem;
+    }
+    .price {
+        font-size: 1.6rem;
+    }
+    .price-card ul {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
 }
 
 @media (max-width: 670px) {
@@ -74,5 +89,24 @@
         padding-left: 3rem;
         padding-right: 3rem;
         gap: 2rem;
+    }
+
+    .price-card h3 {
+        font-size: 1.2rem;
+    }
+    .price-card p,
+    .price-card li {
+        font-size: 0.9rem;
+    }
+    .price {
+        font-size: 1.4rem;
+    }
+    .price-card ul {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .price-card img {
+        width: 18px;
+        height: 18px;
     }
 }
