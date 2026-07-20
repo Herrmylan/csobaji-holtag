@@ -29,6 +29,7 @@
         grid-template-columns: 1fr;
         gap: 1rem;
         padding: 0 1rem;
+        margin: 0 auto;
     }
 
     .fishing-feature {
@@ -37,5 +38,11 @@
 
     .fishing-feature img {
         height: 250px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .fishing-info {
+        margin: 1rem auto;
     }
 }

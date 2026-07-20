@@ -69,8 +69,8 @@
     .price-container {
         grid-template-columns: 1fr;
         padding: 2rem;
-        padding-left: 5rem;
-        padding-right: 5rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
         gap: 2rem;
     }
 }
