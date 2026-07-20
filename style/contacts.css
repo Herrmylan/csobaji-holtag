@@ -133,8 +133,14 @@
     .info-item {
         justify-content: flex-start;
         gap: 1rem;
-        width: fit-content;
+        width: 100%;
+        max-width: 350px;
         margin: 0 auto;
+        /*
+        justify-content: flex-start;
+        gap: 1rem;
+        width: fit-content;
+        margin: 0 auto;*/
     }
     .info-item img {
         width: 60px;
