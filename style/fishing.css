@@ -24,6 +24,16 @@
     margin-top: 1rem;
 }
 
+@media (max-width: 1024px) {
+    .fishing-info {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 1rem;
+        padding: 0 1rem;
+        margin: 1rem auto;
+        width: 100%;
+    }
+}
+
 @media (max-width: 768px) {
     .fishing-info {
         grid-template-columns: 1fr;
@@ -37,12 +47,7 @@
     }
 
     .fishing-feature img {
-        height: 250px;
-    }
-}
-
-@media (max-width: 1024px) {
-    .fishing-info {
-        margin: 1rem auto;
+        /*height: 250px;*/
+        height: 200px;
     }
 }
