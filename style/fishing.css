@@ -32,6 +32,17 @@
         margin: 1rem auto;
         width: 100%;
     }
+
+    .fishing-feature {
+        min-width: 0;
+    }
+    .fishing-feature p,
+    .fishing-feature h3 {
+        overflow-wrap: break-word;
+    }
+    .fishing-info {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
 }
 
 @media (max-width: 768px) {
