@@ -25,3 +25,7 @@ main {
     max-width: 90%;
     max-height: 90%;
 }
+
+* {
+    outline: 1px solid red;
+}
