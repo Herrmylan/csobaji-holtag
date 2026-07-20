@@ -2,36 +2,29 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     position: relative;
-    gap: 0;
     width: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
     margin-bottom: 5vh;
-    max-width: none;
     overflow: hidden;
 }
 
-#lake-upper {
+#lake-upper, #lake-lower {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
     min-height: 500px;
-    color: #eeeeee;
     position: relative;
     z-index: 1;
 }
 
+#lake-upper {
+    color: #eeeeee;
+}
+
 #lake-lower {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    min-height: 500px;
     padding-left: clamp(20px, 10vw, 200px);
     color: #38445F;
-    position: relative;
-    z-index: 1;
 }
 
 .shape-left, .shape-right {
@@ -57,13 +50,13 @@
 #lake-upper {
     opacity: 0;
     transform: translateX(-100px);
-    transition: all 0.8s ease;
+    transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
 #lake-lower {
     opacity: 0;
     transform: translateX(100px);
-    transition: all 0.8s ease;
+    transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
 #lake-upper.show, #lake-lower.show {
@@ -78,14 +71,41 @@
 #lake-upper img, #lake-lower img {
     width: clamp(220px, 35vw, 500px);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    object-fit: cover;
 }
 
-figure {
+.lake-container figure {
     text-align: center;
 }
 
-figcaption {
+.lake-container figcaption {
     margin-top: 10px;
     font-size: 1rem;
     padding-top: 2vh;;
+}
+
+@media (max-width: 768px) {
+    .lake-container {
+        grid-template-columns: 1fr;
+        padding: 30px 0;
+    }
+    .shape-left, .shape-right {
+        display: none;
+    }
+    #lake-upper img, #lake-lower img {
+        width: 80vw;
+    }
+    #lake-upper {
+        transform: translateX(-50px);
+        background-color: #38445F;
+        color: #eeeeee;
+        padding: 3rem 1rem;
+    }
+    #lake-lower {
+        padding-left: 1;
+        transform: translateX(50px);
+        background-color: #eeeeee;
+        color: #38445F;
+        padding: 3rem 1rem;
+    }
 }

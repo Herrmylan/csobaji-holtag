@@ -14,25 +14,27 @@
 
 #contacts > * {
     position: relative;
+    z-index: 1;
 }
 
 .info-container {
-    width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
 
-.info-container > div {
-    padding: 2rem;
+.info-container > div, .info-item {
     display: flex;
+}
+
+.info-container > div {
     justify-content: center;
+    gap: 2rem;
 }
 
 .info-item {
-    display: flex;
     align-items: center;
     padding: 1rem;
-    gap: 35px;
+    gap: 2.25rem;
 }
 
 .info-item img {
@@ -48,7 +50,6 @@
 .info-text span {
     font-size: 1.5rem;
     font-weight: 700;
-    color: white;
 }
 
 .info-text p {
@@ -59,38 +60,36 @@
 
 .social {
     display: grid;
-    grid-template-columns: 1.5fr 1fr 1fr;
+    grid-template-columns: 1.5fr 2fr;
     gap: 5vw;
-}
-
-.social > div {
-    display: flex;
-    flex-direction: column;
 }
 
 .facebook-site {
     text-align: center;
-    align-items: center;
 }
 
 .facebook-site p {
-    color: white;
     font-family: "Cormorant Garamond", serif;
     font-size: 2rem;
 }
 
 .facebook-site img {
     width: 300px;
-    height: auto;
-    transition: transform 0.2s ease, opacity 0.2s ease;
+    transition: 0.3s ease;
 }
 .facebook-site a:hover img {
     transform: scale(1.1);
     opacity: 0.85;
 }
 
+.lists {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
 .site-map p, .fish-wardens p {
-    color: white;
     font-size: 1.5rem;
     font-weight: 500;
 }
@@ -105,9 +104,12 @@
     margin-bottom: 0.5rem;
 }
 
+.site-map a {
+    text-decoration: none;
+}
+
 .site-map a, .fish-wardens li {
     color: #eeeeee;
-    text-decoration: none;
 }
 
 .site-map a:hover {
@@ -118,8 +120,50 @@
     padding-left: 20px;
 }
 
+.info-text span, .facebook-site p, .site-map p, .fish-wardens p {
+    color: white;
+}
+
 @media (max-width: 768px) {
-    .container-3 {
+    .info-container {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding-top: 2rem;
+    }
+    .info-item {
+        justify-content: flex-start;
+        gap: 1rem;
+        width: fit-content;
+        margin: 0 auto;
+    }
+    .info-item img {
+        width: 60px;
+    }
+    .info-text span {
+        font-size: 1.3rem;
+    }
+    .info-text p {
+        font-size: 1rem;
+    }
+    .social {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        padding: 2rem 1rem;
+    }
+    .facebook-site img {
+        width: 180px;
+    }
+    .facebook-site p {
+        font-size: 1.6rem;
+    }
+    .site-map, .fish-wardens {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    .site-map p, .fish-wardens p {
+        font-size: 1.3rem;
+    }
+    .lists {
+        grid-template-columns: 1fr 1fr;
     }
 }

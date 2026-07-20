@@ -11,8 +11,6 @@
 }
 
 #gallery-carousel {
-    max-width: 1000px;
-    margin: 0 auto;
     width: clamp(250px, 60vw, 900px);
     margin: 0 auto;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
@@ -22,7 +20,26 @@
     width: 100%;
     height: 400px;
     object-fit: cover;
-    border-radius: 15px;
     display: block;
     border-radius: 0;
+}
+
+@media (max-width: 768px) {
+    #gallery-carousel {
+        width: 92%;
+    }
+    #gallery-carousel img {
+        height: 250px;
+    }
+    .carousel-control-prev {
+        justify-content: flex-start;
+        padding-left: 10px;
+    }
+    .carousel-control-next {
+        justify-content: flex-end;
+        padding-right: 10px;
+    }
+    #gallery h2 {
+        padding-bottom: 2rem;
+    }
 }

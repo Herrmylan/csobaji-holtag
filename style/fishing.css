@@ -1,8 +1,3 @@
-#fishing h2 {
-    color: #38445F;
-    padding-left: 3rem;
-}
-
 .fishing-info {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -11,20 +6,36 @@
     margin: 3rem auto;
 }
 
-.info-box {
+.fishing-feature {
     text-align: center;
     padding: 2rem;
 }
 
-.info-box h3 {
+.fishing-feature h3 {
     color: #38445F;
     margin-bottom: 1rem;
 }
 
-.info-box img {
+.fishing-feature img {
     width: 100%;
-    height: 220px;
+    height: clamp(180px, 20vw, 220px);
     object-fit: cover;
     border-radius: 12px;
     margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+    .fishing-info {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 0 1rem;
+    }
+
+    .fishing-feature {
+        padding: 1.5rem 0;
+    }
+
+    .fishing-feature img {
+        height: 250px;
+    }
 }

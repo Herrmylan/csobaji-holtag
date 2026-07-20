@@ -20,9 +20,9 @@
     transition: transform 0.5s ease;
 }
 
-.price-card img {
-    width: 50px;
-    margin-bottom: 1rem;
+.price-card li {
+    display: flex;
+    gap: 10px;
 }
 
 .price-card h3 {
@@ -40,6 +40,13 @@
     padding-left: 4rem;
     padding-right: 4rem;
     text-align: left;
+    list-style: none;
+}
+
+.price-card img {
+    width: 20px;
+    height: 20px;
+    margin-top: 2px;
 }
 
 .price {
@@ -49,4 +56,21 @@
 
 .price-card:hover {
     transform: scale(1.05);
+}
+
+@media (max-width: 1076px) {
+    .price-container {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 670px) {
+    .price-container {
+        grid-template-columns: 1fr;
+        padding: 2rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
+        gap: 2rem;
+    }
 }
