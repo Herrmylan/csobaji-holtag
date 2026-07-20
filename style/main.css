@@ -7,10 +7,6 @@ body {
     min-height: 100vh;
 }
 
-html, body {
-    overflow-x: hidden;
-}
-
 main {
     flex: 1;
 }
