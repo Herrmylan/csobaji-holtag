@@ -124,7 +124,7 @@
     color: white;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
     .info-item img {
         width: 55px;
     }
