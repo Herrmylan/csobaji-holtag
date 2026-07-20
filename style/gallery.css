@@ -24,6 +24,15 @@
     border-radius: 0;
 }
 
+.carousel-control-prev, .carousel-control-next {
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 1;
+    width: 55px;
+    height: 55px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 @media (max-width: 768px) {
     #gallery-carousel {
         width: 92%;

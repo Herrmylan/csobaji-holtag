@@ -1,7 +1,5 @@
 .navbar {
-    background-color: rgba(20, 20, 20, 0.55);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
+    background-color: rgba(20, 20, 20, 0.85);
 }
 
 .navbar > .container {
@@ -52,25 +50,21 @@
         position: fixed;
         width: 100%;
     }
-
     .navbar-collapse {
         position: absolute;
         top: 100%;
         left: 0;
         width: 100%;
         padding: 1rem;
-        background-color: rgba(20, 20, 20, 0.55);
+        background-color: rgba(20, 20, 20, 0.85);
     }
-
     .navbar-collapse.scrolled {
         background-color: #38445F;
         box-shadow: 0 5px 20px rgba(0,0,0,0.2);
     }
-
     .navbar-nav {
         gap: 0.5rem;
     }
-
     .nav-link {
         padding: 0.8rem 1rem;
     }

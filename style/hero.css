@@ -44,3 +44,23 @@
     font-family: "Inter", sans-serif;
     font-size: clamp(1rem, 2vw, 1.4rem);
 }
+
+@media (max-width: 991px) {
+    #hero {
+        height: 55vh;
+        min-height: 350px;
+    }
+    .hero-content {
+        transform: translateY(40px);
+    }
+}
+
+@media (max-width: 576px) {
+    #hero {
+        height: 40vh;
+        min-height: 300px;
+    }
+    .hero-content {
+        transform: translateY(50px);
+    }
+}
