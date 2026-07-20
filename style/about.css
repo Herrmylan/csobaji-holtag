@@ -5,6 +5,8 @@
     max-width: 1000px;
     margin: 0 auto;
     padding: 10vh 0;
+    padding-left: 5vw;
+    padding-right: 5vw;
     position: relative;
 }
 
