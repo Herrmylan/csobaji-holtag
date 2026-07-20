@@ -1,21 +1,32 @@
 .navbar {
     background-color: rgba(20, 20, 20, 0.55);
     backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+.navbar-collapse {
+    background-color: rgba(20, 20, 20, 0.55);
+}
+
+.navbar > .container {
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 .navbar-toggler {
     border-color: white;
+    margin-left: auto;
 }
 
 .navbar-toggler-icon {
     filter: brightness(0) invert(1);
 }
 
-.custom-navbar {
+.custom-navbar, .navbar-collapse {
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.custom-navbar.scrolled {
+.custom-navbar.scrolled, .navbar-collapse.scrolled {
     background-color: #38445F;
     box-shadow: 0 5px 20px rgba(0,0,0,0.2);
 }
@@ -38,4 +49,33 @@
 .navbar-brand img {
     width: 78px;
     height: 78px;
+}
+
+@media (max-width: 991px) {
+    .navbar {
+        position: fixed;
+        width: 100%;
+    }
+
+    .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .navbar-nav {
+        gap: 0.5rem;
+    }
+
+    .nav-link {
+        padding: 0.8rem 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand span {
+        display: none;
+    }
 }
