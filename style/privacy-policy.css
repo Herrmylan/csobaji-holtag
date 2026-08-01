@@ -1,0 +1,29 @@
+h2 {
+    color: #38445F;
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-top: 2rem;
+}
+
+.privacy-policy-container {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 0 2rem 4rem;
+}
+
+.privacy-policy-container section {
+    margin-bottom: 2.5rem;
+}
+
+.privacy-policy-container h3 {
+    color: #38445F;
+    margin-bottom: 1rem;
+    padding-bottom: .5rem;
+    border-bottom: 2px solid #38445F;
+}
+
+.privacy-policy-container p {
+    line-height: 1.8;
+    text-align: justify;
+    color: #333;
+}
