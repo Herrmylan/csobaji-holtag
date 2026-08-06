@@ -7,12 +7,16 @@
     padding: 0 2rem;
 }
 
-.imprint-card {
+.imprint-card, .source-card {
     background: white;
     border-radius: 15px;
     padding: 2rem;
     margin-bottom: 2rem;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.source-card {
+    grid-column: 1 / -1;
 }
 
 h2 {
