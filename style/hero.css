@@ -35,14 +35,16 @@
     color: white;
 }
 
-.title {
+#hero .title {
     font-family: "Cormorant Garamond", serif;
     font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 500;
 }
 
-.subtitle {
+#hero .subtitle {
     font-family: "Inter", sans-serif;
     font-size: clamp(1rem, 2vw, 1.4rem);
+    font-weight: 300;
 }
 
 @media (max-width: 991px) {
